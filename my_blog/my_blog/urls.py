@@ -20,4 +20,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('article/', include(('article.urls', 'article'), namespace='article')),
+    # 在u人类patterns中注册article，并给这条url一个名称article
 ]

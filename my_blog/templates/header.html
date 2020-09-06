@@ -9,7 +9,12 @@
         <ul class="navbar-nav">
           <!-- 条目 -->
           <li class="nav-item">
-            <a class="nav-link" href="#">文章</a>
+              <a class="nav-link" href="{% url 'article:article_list' %}">文章</a>
+              <!-- article 是在项目根目录的urls.py中定义的具体的app的名称
+                 article_list是在app中的urls.py中定义的具体的路由地址
+                 
+              -->
+
           </li>
         </ul>
       </div>
